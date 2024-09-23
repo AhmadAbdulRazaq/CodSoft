@@ -1,0 +1,284 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-container {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+/* About section styles */
+#about {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container img {
+    border-radius: 50%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Skills section styles */
+#skills {
+    padding: 40px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skills-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.skills-container h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container li {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Projects section styles */
+#projects {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.projects-container h1{
+
+    font-size: 40px;
+    color: black;
+    
+
+}
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project h3 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+
+    .about-container img {
+        max-width: 150px;
+    }
+
+    .skills-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .skills-container li {
+        font-size: 1.3rem;
+    }
+
+    .project h3 {
+        font-size: 1.8rem;
+    }
+
+    .project p {
+        font-size: 1.2rem;
+    }
+
+    .resume-container,
+    .contact-container {
+        max-width: 300px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+}
+/* Resume section styles */
+#resume {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.resume-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.resume-container p{
+    font-size: 20px;
+    color: #555;
+}
+
+.resume-container h2{
+    font-size: 30px;
+}
+
+/* Contact section styles */
+#contact {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-container h2{
+    font-size: 20px;
+}
+.contact-container p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+/* Hover effect on the whole portfolio sections */
+#about:hover, #skills:hover, #projects:hover, #resume:hover, #contact:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on skills points */
+.skills-container li:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Additional styles for a more professional look */
+
+/* Header style */
+header {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* About section style */
+#about p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Skills section style */
+.skills-container h2 {
+    color: #007BFF;
+}
+
+/* Projects section style */
+.project h3 {
+    color: #007BFF;
+}
+
+/* Contact section style */
+#contact p {
+    color: #444;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    margin-top: 20px;
+}
+
+.footer-container p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
